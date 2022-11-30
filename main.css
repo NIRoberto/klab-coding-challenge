@@ -16,7 +16,7 @@ body {
 .main {
   display: grid;
   grid-template-columns: repeat(2, 50%);
-  height: 160vh;
+  height: 131vh;
   width: 100%;
 }
 .main .div1 {
@@ -36,6 +36,22 @@ body .card {
   border-radius: 15px;
   display: grid;
   grid-template-columns: repeat(2, 50%);
+}
+
+.footer {
+  text-align: center;
+  margin: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer div {
+  width: 70%;
+}
+
+progress div{
+  
 }
 
 body .card .div1,
@@ -80,16 +96,16 @@ body .card .div1 .cirlce .inner {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   display: grid;
   grid-template-areas: "h h h";
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 15% 85%;
 }
 
 body .card .div1 .cirlce .inner .item1 {
   grid-area: h;
 }
 body .card .div1 .cirlce .inner .item2 {
-  border: 1px solid red;
 }
 body .card .div1 .cirlce .inner .item3 {
-  border: 1px solid red;
 }
 body .card .div2 form {
   background-color: rgb(235, 242, 252);

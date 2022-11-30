@@ -50,8 +50,23 @@ footer div {
   width: 70%;
 }
 
-progress div{
-  
+.progress {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.progress .clicked {
+  background-color: rgb(31, 118, 231);
+  width: 5rem;
+  margin: 1rem;
+  height: 5px;
+}
+.progress .p1,
+.progress .p2 {
+  background-color: rgb(235, 242, 252);
+  width: 5rem;
+  margin: 1rem;
+  height: 5px;
 }
 
 body .card .div1,
@@ -102,11 +117,83 @@ body .card .div1 .cirlce .inner {
 
 body .card .div1 .cirlce .inner .item1 {
   grid-area: h;
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
 }
+
 body .card .div1 .cirlce .inner .item2 {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: 80% 20%;
+  place-items: center;
+}
+body .card .div1 .cirlce .inner .item2 .btns {
+  padding: 0.2rem;
+}
+body .card .div1 .cirlce .inner .item2 .btns .btn1 {
+  background-color: rgb(235, 242, 252);
+  color: rgb(31, 118, 231);
+  outline: none;
+  border: none;
+  font-size: 12px;
+  border-radius: 5px;
+  padding: 3px 5px;
+  font-weight: bold;
+}
+body .card .div1 .cirlce .inner .item2 .btns .btn2 {
+  background-color: rgb(198, 248, 218);
+  color: rgb(31, 231, 131);
+  outline: none;
+  border: none;
+  font-size: 12px;
+  padding: 3px 5px;
+  margin: 0.7rem;
+  font-weight: bold;
+
+  border-radius: 5px;
+}
+body .card .div1 .cirlce .inner .item2 .btns .btn3 {
+  background-color: rgb(250, 197, 190);
+  color: rgb(231, 38, 31);
+  outline: none;
+  border: none;
+  padding: 3px 5px;
+
+  font-weight: bold;
+
+  font-size: 12px;
+
+  border-radius: 5px;
 }
 body .card .div1 .cirlce .inner .item3 {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(2, 50%);
 }
+body .card .div1 .cirlce .inner .item3 .sub-card1 {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background-color: white;
+
+  margin: 0.2rem;
+}
+body .card .div1 .cirlce .inner .item3 .sub-card1 div {
+  /* display: flex;
+  flex-direction: column; */
+}
+body .card .div1 .cirlce .inner .item3 .sub-card1 button {
+  background-color: rgb(198, 248, 218);
+  color: rgb(31, 231, 131);
+  outline: none;
+  border: none;
+  font-size: 12px;
+  padding: 3px;
+  margin: 0.7rem;
+  font-weight: bold;
+}
+
+
 body .card .div2 form {
   background-color: rgb(235, 242, 252);
   margin: 2rem 4rem;
